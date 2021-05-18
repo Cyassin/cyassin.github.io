@@ -1,0 +1,959 @@
+<style>
+/**************************************************
+Gemini DEFAULT Theme: v2.0
+--------------------------
+
+- Borders/Lines: e2e0e0 (gray color)
+- Headings/Links: 0083d2 (blue)
+- Header Bar: ff7700 (orange)  
+- Navigation Bar: f5f5f5 (light gray)
+
+- Main background color: e8eefa (pale blue) 
+- Secondary background color: fafbfe (light orange)
+- Gray background color: f5f5f5 (light gray)
+**************************************************/
+
+/**************************************************/
+/* Core */
+/**************************************************/
+html
+{
+	margin:0;
+	padding:0;
+	height:100%;
+}
+body
+{
+    background-color: White;
+    margin:0;
+	padding:0;
+	height:100%;
+}
+p
+{
+    margin: 0pt;
+    font-family: Arial,Verdana,Tahoma;
+    font-size: 12px;
+}
+table
+{
+    border: 0;
+    font-size: 12px;
+    font-family: Arial,Verdana,Tahoma;
+}
+h1, h2, h3, h4, h5, h6
+{
+    margin: 0pt;
+    color: #4c4c4c;
+    font-family: Arial,Verdana,Tahoma;
+}
+hr.thin
+{
+    color: #e2e0e0;
+    background-color: #e2e0e0;
+    height: 1px;
+}
+span, div
+{
+    font-family: Arial,Verdana,Tahoma;
+}
+/**************************************************/
+/* Master Containers */
+/**************************************************/
+#master-container
+{
+	min-height:100%;
+	position:relative;
+}
+#master-header
+{
+	margin: 0 0 10px 0;
+}
+#master-body
+{
+	padding-bottom: 50px;
+}
+#master-footer
+{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	margin: 20px 0 0 0;
+	height: 30px;
+    text-align:center;
+    vertical-align:middle;
+}
+/**************************************************/
+/* Hyperlinks */
+/**************************************************/
+a
+{
+    font-family: Arial,Verdana,Tahoma;
+    text-decoration: underline;
+    color: #0083d2;
+}
+a:hover
+{
+    font-family: Arial,Verdana,Tahoma;
+    text-decoration: underline;
+    color: #ff7700;
+}
+
+a.visited
+{
+    font-family: Arial,Verdana,Tahoma;
+    text-decoration: underline;
+    color: #0083d2;
+}
+/* Show underline on hover hyperlink */
+.alink
+{
+    color: #0083d2;
+    font-size: 13px;
+    font-family: Arial,Verdana,Tahoma;
+    text-decoration: none;
+}
+.alink:hover
+{
+    color: #ff7700;
+    font-size: 13px;
+    font-family: Arial,Verdana,Tahoma;
+    text-decoration: underline;
+}
+.link
+{
+    cursor: pointer;
+}
+a.img
+{
+    text-decoration: none;
+    border: none;
+}
+.nounderline
+{
+	text-decoration:none;
+}
+/**************************************************/
+/* Background colors */
+/**************************************************/
+.background2 /* Secondary light color */
+{
+    background-color: #fafbfe; 
+}
+.background3 /* Main color */
+{
+    background-color: #e8eefa;
+}
+.background4 /* Gray color */
+{
+    background-color: #f5f5f5;
+}
+/**************************************************/
+/* Foreground colors */
+/**************************************************/
+.color2
+{
+    color: #fafbfe;
+}
+.color3
+{
+    color: #e8eefa;
+}
+.color4
+{
+    color: #f5f5f5;
+}
+/**************************************************/
+/* Navigation/header bar specific */
+/**************************************************/
+.navbar
+{
+    background-color: #ff7700;
+    border: solid 1px #ff7700;
+    color: White;
+    font-family: Arial,Verdana,Tahoma;
+}
+.navlink
+{
+    color: White;
+    font-size: 13px;
+    font-family: Arial,Verdana,Tahoma;
+    text-decoration: none;
+    border: none;
+}
+.navlink:hover
+{
+    color: White;
+    font-size: 13px;
+    font-family: Arial,Verdana,Tahoma;
+    text-decoration: underline;
+    border: none;
+}
+.footer-box
+{
+    vertical-align: middle;
+    padding: 0;
+    margin: 5px 0 0 0;
+    border-top: 1px solid #e2e0e0;
+    color: #4c4c4c;
+}
+.footerlink
+{
+    color: #4c4c4c;
+    font-size: 13px;
+    font-family: Arial,Verdana,Tahoma;
+    text-decoration: none;
+    border: none;
+}
+.footerlink:hover
+{
+    color: black;
+    font-size: 13px;
+    font-family: Arial,Verdana,Tahoma;
+    text-decoration: underline;
+    border: none;
+}
+/**************************************************/
+/* Web Form styles */
+/**************************************************/
+.webForm
+{
+    border: solid 1px #e2e0e0;
+    border-collapse: collapse;
+}
+.webFormTitle
+{
+    background-color: #e8eefa;
+    color: black;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+    text-align: left;
+}
+.webFormTitleSmall
+{
+    background-color: #e8eefa;
+    color: black;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: left;
+}
+.webFormCaption
+{
+    background-color: #e8eefa;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+}
+.webFormPrompt
+{
+    background-color: #f5f5f5;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: right;
+    vertical-align: top;
+    width: 30%;
+}
+.webFormFootnote
+{
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    font-size: x-small;
+    vertical-align: top;
+}
+.webFormButtonRow
+{
+    background-color: #e8eefa;
+    border-top: solid 1px #e2e0e0;
+}
+.subSection
+{
+    background-color: #e8eefa;
+    border-top: solid 1px #e2e0e0;
+    border-bottom: solid 1px #e2e0e0;
+}
+.web-form
+{
+    border: solid 1px #bbb;
+    border-collapse: collapse;
+}
+.web-form-prompt
+{
+	background-color: #f5f5f5;
+    color: #4c4c4c;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: right;
+    vertical-align: top;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: solid 1px #e2e0e0;
+}
+.web-form-input
+{
+    text-align: left;
+    vertical-align: top;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: dotted 1px #e2e0e0;
+    min-height: 400px;
+}
+.Default.RadEditor
+{
+    height: 400px;
+    min-height: 400px;
+}
+{
+    text-align: left;
+    vertical-align: top;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: dotted 1px #e2e0e0;
+    min-height: 400px;
+}
+.web-form-title
+{
+    color: #4c4c4c;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: left;
+}
+.web-form-subtitle
+{
+    color: #4c4c4c;
+    font-size: 12px;
+    text-decoration: none;
+    text-align: left;
+    border-top: none;
+}
+.web-form-buttons
+{
+    border-top: solid 1px #bbb;
+    text-align: center;
+    vertical-align: top;
+}
+/**************************************************/
+/* Inline Forms */
+/**************************************************/
+.inline-form
+{
+    background-color: #fafbfe; /* background2 */
+    border: solid 2px #e2e0e0;
+    border-collapse: collapse;
+}
+.inline-prompt
+{
+    background-color: #f5f5f5; /* background4 */
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: right;
+    vertical-align: top;
+    width: 30%;
+    white-space: nowrap;
+    border-right: solid 1px #e2e0e0;
+}
+.inline-buttons
+{
+    background-color: #e8eefa; /* background3 */
+    border-top: solid 1px #e2e0e0;
+}
+/**************************************************/
+/* Borders */
+/**************************************************/
+.bordered
+{
+    border: solid 1px #e2e0e0;
+}
+.borderTopBottom
+{
+    border-top: solid 1px #e2e0e0;
+    border-bottom: solid 1px #e2e0e0;
+}
+.borderTop
+{
+    border-top: solid 1px #e2e0e0;
+}
+.borderBottom
+{
+    border-bottom: solid 1px #e2e0e0;
+}
+.borderBottom2
+{
+    border-bottom: solid 1px #959595;
+}
+.borderTop2
+{
+    border-top: solid 1px #959595;
+    border-bottom: solid 1px #e2e0e0;
+}
+.borderLeft
+{
+    border-left: solid 1px #e2e0e0;
+}
+.borderRight
+{
+    border-right: solid 1px #e2e0e0;
+}
+.no-border-top
+{
+    border-top: 0;
+}
+.border-bottom-dotted
+{
+    border-bottom: dotted 1px #e2e0e0;
+}
+/**************************************************/
+/* Grid specific */
+/**************************************************/
+.editRow
+{
+    background-color: #fafbfe;
+}
+.dataGrid
+{
+    border: solid 1px #e2e0e0;
+    border-collapse: collapse;
+}
+.headerRow
+{
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+.normalRow
+{
+}
+.alternateRow
+{
+    background-color: #fafbfe;
+}
+.sortable-column
+{
+	cursor: pointer;
+}
+.selected
+{
+	background-color: #ffffcd;
+}
+/**************************************************/
+/* Tabs                                           */
+/**************************************************/
+.tabItem
+{
+    background-color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    border-right: dotted 1px #bbb;
+}
+.tabItem > a
+{
+    background-color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.tabItemSelected, .tabItemSelected > a
+{
+    background-color: #ff7700;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: default;
+    outline: none; 
+    -moz-focus-inner: border: none; 
+}
+.tabRow
+{
+    border-bottom: solid 1px #e2e0e0;
+}
+.tabitem2, .tabitem2 > a
+{
+    font-weight: normal;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.tabitem2-selected, .tabitem2-selected > a
+{
+    color: #ff7700;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: default;
+}
+.subTabItem
+{
+    background-color: #f5f5f5;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    border-right: dotted 1px #bbb;
+}
+.subTabItem > a
+{
+    background-color: #f5f5f5;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.subTabItemSelected
+{
+    background-color: #f5f5f5;
+    color: #ff7700;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: default;
+    outline: none; 
+    -moz-focus-inner: border: none; 
+    border-right: dotted 1px #bbb;
+}
+.subTabItemSelected > a
+{
+    color: #ff7700;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: default;
+    outline: none; 
+    -moz-focus-inner: border: none; 
+}
+/**************************************************/
+/* Misc. */
+/**************************************************/
+.nowrap
+{
+    white-space: nowrap;
+}
+.nowidth
+{
+    width: 1%;
+}
+.nounderline
+{
+	text-decoration:none;
+}
+/**************************************************/
+/* Dropdown menus */
+/**************************************************/
+ul.topnav li ul.subnav
+{
+    list-style: none;
+    position: absolute; /* Important - Keeps subnav from affecting main navigation flow */
+    left: 0;
+    top: 25px;
+    margin: 0;
+    padding: 0;
+    display: none;
+    float: left;
+    border: solid 1px #e2e0e0;
+    background-color: #fafbfe;
+    width: 160px;
+    z-index: 1;
+}
+ul.topnav li ul.subnav li a:hover
+{
+    background-color: #ff7700;
+    color: White;
+}
+.megamenu
+{
+    border: 2px solid #e2e0e0;
+}
+.megamenu .column ul li a:hover
+{
+    background-color: #ff7700;
+    color: White;
+    text-decoration: none;
+}
+/**************************************************/
+/* Validation */
+/**************************************************/
+input.error, select.error, textarea.error, td.error
+{
+    border: 2px solid #b06768;
+    background-color: #f8edef;
+}
+label.error
+{
+    display: none;
+}
+/**************************************************/
+/* Inline messages (auto fade out) */
+/**************************************************/
+.feedback-add /* greens */
+{
+	background-color: #e5ffea;
+	border: 1px solid #c4e4c4;
+	padding: 5px;
+	margin-top: 10px;
+	display: none;
+}
+.feedback-delete /* reds */
+{
+	background-color: #f8edef;
+	border: 1px solid #b06768;
+	padding: 5px;
+	margin-top: 10px;
+	display: none;
+}
+.feedback-info /* yellows */
+{
+	background-color: #ffef97; 
+	border: 1px solid #ffd400;
+	padding: 5px;
+	margin-top: 10px;
+	display: none;
+}
+.closebox
+{
+	position: absolute;       
+	right: 2px;
+	top: 2px;
+	bottom: 2px;
+	background-image: url(../../images/close.png);
+	background-repeat: no-repeat;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;       
+} 
+.closebox:hover 
+{
+	background-image: url(../../images/closehover.png);
+}
+/**************************************************/
+/* Planner */
+/**************************************************/
+.bucket-header /* greens */
+{
+	background-color: #e5ffea;
+	border: 1px solid #c4e4c4;
+	padding: 5px;
+	margin-top: 10px;
+}
+.watermark
+{
+	color: Gray;
+	font-size: 11px;
+	font-family: Arial;
+}
+.folderSelected
+{
+	color: White !important;
+	background-color: #FF7700 !important;
+}
+.active-inline
+{
+	background-color: cornsilk;
+}
+/**************************************************/
+/* Text Sizing */
+/**************************************************/
+.text-font-large
+{
+	font-size:14px;
+}
+.text-font-heading
+{
+	color:#4c4c4c;
+	font-size:16px;
+	font-weight:bold;
+}
+.text-subtle
+{
+	color: #808080;
+}
+/**************************************************/
+/* Action Links */
+/**************************************************/
+
+.action-link
+{
+	color: #4c4c4c;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.action-link > a
+{
+	color: #4c4c4c;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.action-button 
+{
+	padding: 1px 1px 1px 1px;
+	margin: 3px 3px 3px 3px;
+	border: solid 1px #bbb;
+	background-color: #fff8dc;
+	vertical-align:middle;
+	cursor: pointer;
+}
+.action-button-small
+{
+	padding: 1px 1px 1px 1px;
+	margin: 0px;
+	height: 16px;
+	width:16px;
+	border: solid 1px #bbb;
+	background-color: #fff8dc;
+	vertical-align:middle;
+	cursor: pointer;
+}
+.action-button-small img, .action-button-small-green img, .action-button-small-red img
+{
+	vertical-align: text-top;
+}
+.action-button-small-green
+{
+	padding: 1px 1px 1px 1px;
+	margin: 0px;
+	height: 16px;
+	border: solid 1px #347235;
+	background-color: #4E9258;
+	vertical-align:middle;
+	color:White;
+	cursor: pointer;
+}
+.action-button-small-green:hover
+{
+	background: #4CC552;
+}
+.action-button-small-red
+{
+	padding: 1px 1px 1px 1px;
+	margin: 0px;
+	height: 16px;
+	border: solid 1px #8b0000;
+	color:White;
+	background-color: #dc143c;
+	vertical-align:middle;
+	cursor: pointer;
+}
+.action-button-small-red:hover
+{
+	background: #ff5819;
+}
+.action-button:hover, .action-button-small:hover
+{
+	background-color: #ffdead;
+}
+.selected-item
+{
+	background-color: #fff8dc;
+}
+.action-dropdown-menu
+{
+	padding:7px;
+	font-size:14px;
+	text-align:left;
+}
+.action-dropdown-menu a
+{
+	text-decoration: none;
+}
+.action-toolbar
+{
+	color: #4c4c4c; 
+	cursor:pointer; 
+	font-weight: bold; 
+	font-size:16px;
+	margin:10px 7px 10px 7px; 
+	text-align:center; 
+	padding: 5px;
+	border: solid 1px #e2e0e0;
+}
+.data-filter-position
+{
+	color: #5a5a5a;
+	font-weight: normal;
+	text-decoration: none;
+}
+.data-filter-position : hover
+{
+	color: Gray;
+	text-decoration: underline;
+}
+
+/**************************************************/
+/* Reporting */
+/**************************************************/
+.report-grid
+{
+	border-collapse: collapse;
+	color: #4c4c4c;
+}
+.report-first-column
+{
+	background-color: #FFF8DC;
+	text-align: center;
+	font-weight: bold;
+}
+.report-cell-red
+{
+	background-color: #f8edef;
+}
+.report-cell-yellow
+{
+	background-color: #ffef97; 
+}
+.report-cell-green
+{
+	background-color: #e5ffea;
+}
+.report-cell-gray
+{
+	background-color: #f5f5f5;
+}
+.report-cell-smallcaps
+{
+	font-size: 10px;
+	text-transform: uppercase;
+}
+</style>
+<div id="master-body">
+            <div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div>
+
+<script type="text/javascript">
+$().ready(function()
+{
+    $("input:visible:enabled:first").focus();
+    $('#ctl00_Main_lnkForgotPassword').click(ForgotPassword);
+    $('.close').click(function(e) { e.preventDefault(); $('.mask, .window').hide(); });
+});
+</script>
+
+<link href="css/jquery.ui/jqueryui.css" rel="Stylesheet">
+<link href="css/jquery.megamenu-Popup/jquery.megamenu-Popup.css" rel="Stylesheet">
+<style type="text/css">
+    .ui-widget-header .ui-icon
+    {
+        background-image: url(css/jquery.ui/images/ui-icons_222222_256x240.png);
+    }
+</style>
+    
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$Main$scriptManagerDefault', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls(['tctl00$Main$ctl00$updPanelForgotPwd'], [], [], 90);
+//]]>
+</script>
+
+    
+    <table class="webForm" align="center" cellspacing="0" cellpadding="5">
+        <tbody><tr>
+            <td colspan="2" class="webFormTitleSmall">
+                Gemini Login
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Username
+            </td>
+            <td>
+                <input name="ctl00$Main$Username" type="text" maxlength="100" id="ctl00_Main_Username" style="width:200px;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Password
+            </td>
+            <td>
+                <input name="ctl00$Main$Password" type="password" maxlength="100" id="ctl00_Main_Password" style="width:200px;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td align="left">
+                <input id="ctl00_Main_chkRememberMe" type="checkbox" name="ctl00$Main$chkRememberMe"><label for="ctl00_Main_chkRememberMe">Remember Me?</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <a id="ctl00_Main_lnkForgotPassword" href="#">Forgot your password?</a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="2" align="center">
+                
+            </td>
+        </tr>
+        <tr>
+            <td class="webFormButtonRow" colspan="2" align="center">
+                <input type="submit" name="ctl00$Main$btnAction" value="Login" id="ctl00_Main_btnAction" title="Login">
+            </td>
+        </tr>
+    </tbody></table>
+    
+
+<div id="forgotPassword" class="window background3">
+    <!-- close button is defined as close class -->
+    
+
+<script type="text/javascript" language="javascript">       
+
+var IE = document.all ? true:false;
+      
+ // If NS -- that is, !IE -- then set up for mouse capture       
+//if (!IE) document.captureEvents(Event.MOUSEMOVE);
+      
+//document.onmousemove = getMouseXY;       
+
+// Temporary variables to hold mouse x-y pos.s       
+var tempX = 0;
+var tempY = 0;      
+
+function getMouseXY(e)
+{
+    if (IE)
+    { 
+        tempX = event.clientX + document.body.scrollLeft;
+        tempY = event.clientY + document.body.scrollTop;
+    } 
+    else 
+    { 
+        tempX = e.pageX;
+        tempY = e.pageY;
+    }   
+
+    // catch possible negative values in NS4 
+    if (tempX < 0){tempX = 0;} 
+    if (tempY < 0){tempY = 0;}   
+
+    // show the position values in the form named Show 
+    // in the text fields named MouseX and MouseY 
+    var divToMove = document.getElementById("AjaxProgressDiv"); 
+    divToMove.style.left = tempX+5;
+    divToMove.style.top = tempY+5;
+    return true;
+ }
+</script>
+
+
+            </div>
+	    </div>
